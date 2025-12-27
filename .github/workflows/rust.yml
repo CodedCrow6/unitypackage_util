@@ -9,7 +9,7 @@ on:
 
 env:
   CARGO_TERM_COLOR: always
-
+  
 jobs:
   build-macos:
     runs-on: macos-11
@@ -46,7 +46,7 @@ jobs:
           files: unitypackage_util-macos-x86_64.zip
 
       - name: unitypackage_util-macos-x86_64
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: unitypackage_util-macos-x86_64
           path: unitypackage_util-macos-x86_64/*
